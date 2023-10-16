@@ -12,4 +12,3 @@ spec:
   type: other
   lifecycle: experimental
   owner: guests
-  system: github
