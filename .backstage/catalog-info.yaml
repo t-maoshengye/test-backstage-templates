@@ -1,0 +1,28 @@
+apiVersion: backstage.io/v1beta2
+kind: Template
+metadata:
+  name: terraform-github-team
+  title: Terraform GitHub Team
+  description: Creates a GitHub repository with Terraform code for GitHub team management
+spec:
+  owner: your-team-name-here
+  type: service
+  steps:
+    - id: fetch-base
+      name: Fetch Base
+      action: fetch:cookiecutter
+      input:
+        url: ./templates
+    - id: publish
+      name: Publish to GitHub
+      action: publish:github
+      input:
+        repoUrl: "github.com/org/new-repo"
+  parameters:
+    - title: Choose a name
+      required:
+        - name
+      properties:
+        name:
+          title: Repository Name
+          type: string

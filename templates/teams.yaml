@@ -1,0 +1,14 @@
+teams:
+  new-team1:
+    description: "desc"
+  new-team2:
+    description: "desc"
+    privacy: closed
+    member:
+      - username1
+      - username2
+    maintainer:
+      - username1
+    repositories:
+      - existing-repo1
+      - existing-repo2
