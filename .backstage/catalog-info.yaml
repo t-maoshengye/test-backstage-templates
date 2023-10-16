@@ -4,6 +4,12 @@ metadata:
   name: test-backstage-templates
   annotations:
     github.com/project-slug: t-maoshengye/test-backstage-templates
+  labels:
+    system: github
+  tags:
+    - terraform
+    - github
+    - yaml
 spec:
   type: other
   lifecycle: experimental
